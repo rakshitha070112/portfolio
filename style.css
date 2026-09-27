@@ -3,11 +3,6 @@
    COMPLETE STYLE SHEET
 ========================================================= */
 
-
-/* =========================================================
-   GLOBAL RESET
-========================================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -102,7 +97,6 @@ a {
 .nav-container {
     width: min(1150px, 92%);
     min-height: 76px;
-
     margin: 0 auto;
 
     display: flex;
@@ -115,11 +109,9 @@ a {
 .logo {
     font-size: 25px;
     font-weight: 800;
-
     letter-spacing: -0.8px;
 
     color: #ffffff;
-
     white-space: nowrap;
 }
 
@@ -131,7 +123,6 @@ a {
 .nav-links {
     display: flex;
     align-items: center;
-
     gap: 28px;
 }
 
@@ -150,7 +141,6 @@ a {
     content: "";
 
     position: absolute;
-
     left: 0;
     bottom: -7px;
 
@@ -388,7 +378,6 @@ a {
 
 .profile-area {
     display: flex;
-
     justify-content: center;
 }
 
@@ -998,7 +987,7 @@ a {
 
 /* =========================================================
    CONTACT SECTION
-   CLEAN SPACING VERSION
+   CORRECTED VERSION
 ========================================================= */
 
 .contact-content {
@@ -1050,6 +1039,8 @@ a {
 /* Individual contact card */
 
 .contact-item {
+    position: relative;
+
     display: grid;
 
     /*
@@ -1058,11 +1049,11 @@ a {
        Column 3 = actual information
     */
 
-    grid-template-columns: 46px 105px minmax(0, 1fr);
+    grid-template-columns: 44px 105px minmax(0, 1fr);
 
     align-items: center;
 
-    column-gap: 16px;
+    column-gap: 15px;
 
     width: 100%;
 
@@ -1101,9 +1092,14 @@ a {
 }
 
 
-/* Contact icon */
+/* =========================================================
+   CONTACT ICON
+   IMPORTANT:
+   The icon is created using ::before.
+   It is NOT applied to the label span.
+========================================================= */
 
-.contact-item > span:first-child {
+.contact-item::before {
     width: 42px;
     height: 42px;
 
@@ -1119,14 +1115,59 @@ a {
     color: #887cff;
 
     font-size: 16px;
+    font-weight: 700;
 
-    flex-shrink: 0;
+    grid-column: 1;
+    grid-row: 1;
+
+    content: "@";
 }
 
 
-/* EMAIL / PHONE / LOCATION / GITHUB / LINKEDIN */
+/* Email icon */
+
+.contact-item:nth-child(1)::before {
+    content: "@";
+}
+
+
+/* Phone icon */
+
+.contact-item:nth-child(2)::before {
+    content: "☎";
+}
+
+
+/* Location icon */
+
+.contact-item:nth-child(3)::before {
+    content: "⌖";
+}
+
+
+/* GitHub icon */
+
+.contact-item:nth-child(4)::before {
+    content: "G";
+}
+
+
+/* LinkedIn icon */
+
+.contact-item:nth-child(5)::before {
+    content: "in";
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CONTACT LABEL
+========================================================= */
 
 .contact-label {
+    grid-column: 2;
+    grid-row: 1;
+
     display: block;
 
     color: #8374ff;
@@ -1140,13 +1181,23 @@ a {
     text-transform: uppercase;
 
     white-space: nowrap;
+
+    /* IMPORTANT:
+       No background
+       No border
+       No icon styling
+    */
 }
 
 
-/* Contact value */
+/* =========================================================
+   CONTACT VALUE
+========================================================= */
 
-.contact-item a,
-.contact-item p {
+.contact-item > span:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+
     color: #eef0f7;
 
     font-size: 15px;
@@ -1159,14 +1210,29 @@ a {
 
     min-width: 0;
 
-    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
-.contact-item a {
+.contact-item > a {
+    grid-column: 3;
+    grid-row: 1;
+
+    color: #eef0f7;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    min-width: 0;
+
+    overflow-wrap: anywhere;
+
     transition: color 0.3s ease;
 }
 
-.contact-item a:hover {
+.contact-item > a:hover {
     color: #78dadd;
 }
 
@@ -1463,8 +1529,9 @@ a {
     }
 
     .contact-item {
+
         /*
-           Smaller mobile layout:
+           Mobile:
            icon | label | value
         */
 
@@ -1477,7 +1544,7 @@ a {
         padding: 14px;
     }
 
-    .contact-item > span:first-child {
+    .contact-item::before {
         width: 37px;
         height: 37px;
 
@@ -1492,9 +1559,12 @@ a {
         letter-spacing: 0.5px;
     }
 
-    .contact-item a,
-    .contact-item p {
+    .contact-item > span:nth-child(2),
+    .contact-item > a {
         font-size: 12px;
+
+        white-space: normal;
+        overflow-wrap: anywhere;
     }
 
 
@@ -1542,6 +1612,9 @@ a {
         grid-template-columns: 1fr 1fr;
     }
 
+
+    /* ---------- CONTACT ---------- */
+
     .contact-item {
         grid-template-columns: 36px 72px minmax(0, 1fr);
 
@@ -1550,17 +1623,21 @@ a {
         padding: 12px;
     }
 
-    .contact-item > span:first-child {
+    .contact-item::before {
         width: 34px;
         height: 34px;
+
+        border-radius: 9px;
+
+        font-size: 13px;
     }
 
     .contact-label {
         font-size: 9px;
     }
 
-    .contact-item a,
-    .contact-item p {
+    .contact-item > span:nth-child(2),
+    .contact-item > a {
         font-size: 11px;
     }
 }

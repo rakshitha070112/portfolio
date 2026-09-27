@@ -1,221 +1,675 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Ravada Rakshitha, Computer Science and Engineering student.">
-  <title>Ravada Rakshitha | CSE Student</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ravada Rakshitha | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header class="header">
-    <a href="#home" class="logo">R<span>R</span></a>
-    <button class="menu-btn" aria-label="Open menu">☰</button>
-    <nav class="nav">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="home" class="hero section">
-      <div class="hero-text reveal">
-        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-        <h1>Hi, I'm <span>Ravada Rakshitha</span></h1>
-        <h2>Computer Science Student</h2>
-        <p class="hero-description">
-          Computer Science undergraduate pursuing B.Tech at Lendi Institute of Engineering
-          and Technology, with interests in programming, web development, IoT, problem solving,
-          and practical technology solutions.
-        </p>
-        <div class="buttons">
-          <a class="btn primary" href="#projects">View My Projects</a>
-          <a class="btn secondary" href="#contact">Contact Me</a>
-         <a href="resume/resume.pdf" target="_blank">View Resume</a>
-          <a class="btn secondary" href="https://github.com/rakshitha070112" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/ravada-rakshitha-93922334a" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
+    <!-- ================= NAVBAR ================= -->
 
-      <div class="hero-card reveal">
-        <div class="profile-card">
-    <img src="images/profile.png" alt="Ravada Rakshitha">
-    <h3>Ravada Rakshitha</h3>
-</div>
-        <div class="mini-stats">
-          <div><strong>2024–28</strong><span>B.Tech</span></div>
-          <div><strong>02</strong><span>Projects</span></div>
-          <div><strong>07</strong><span>Certificates</span></div>
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                Rakshitha<span>.</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
         </div>
-      </div>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <p class="hero-small-text">
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hi, I'm
+                    <span>Ravada Rakshitha</span>
+                </h1>
+
+                <h2>
+                    Computer Science Student
+                </h2>
+
+                <p class="hero-description">
+                    A Computer Science and Engineering student interested in
+                    programming, web development, IoT, problem solving,
+                    and building practical technology solutions.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary-btn">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+
+                    <a href="resume/resume.pdf"
+                       target="_blank"
+                       class="btn resume-btn">
+                        View Resume
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE CARD -->
+
+            <div class="profile-area">
+
+                <div class="profile-card">
+
+                    <div class="profile-image-wrapper">
+                        <img
+                            src="images/profile.png"
+                            alt="Ravada Rakshitha"
+                            class="profile-image"
+                        >
+                    </div>
+
+                    <h3>Ravada Rakshitha</h3>
+
+                    <p>Computer Science Student</p>
+
+                    <div class="profile-stats">
+
+                        <div class="stat">
+                            <strong>8.88</strong>
+                            <span>CGPA</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>02</strong>
+                            <span>Projects</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>07</strong>
+                            <span>Certificates</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
+
+
+    <!-- ================= ABOUT ================= -->
 
     <section id="about" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">ABOUT ME</p>
-        <h2>Who I Am</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-card reveal">
-          <h3>My Introduction</h3>
-          <p>
-            I am Ravada Rakshitha, a Computer Science undergraduate pursuing B.Tech
-            (2024–2028) at Lendi Institute of Engineering and Technology.
-          </p>
-          <p>
-            I have basic fundamentals in C and Data Structures and intermediate knowledge
-            of Python and HTML. I focus on writing efficient and optimized solutions and
-            am eager to apply my technical skills to real-world challenges and grow as a developer.
-          </p>
-          <p>
-            My strengths include communication, presentation, quick learning, problem solving,
-            teamwork and collaboration, self-motivation, time management, and willingness to learn.
-          </p>
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p>ABOUT ME</p>
+                <h2>Who I Am</h2>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+                        I am a Computer Science and Engineering undergraduate
+                        pursuing my B.Tech at Lendi Institute of Engineering
+                        and Technology.
+                    </p>
+
+                    <p>
+                        I am interested in programming, web development,
+                        IoT, problem solving and developing practical
+                        technology solutions.
+                    </p>
+
+                    <p>
+                        I enjoy learning new technologies and applying my
+                        knowledge to real-world projects. I am eager to
+                        improve my technical skills and grow as a developer.
+                    </p>
+
+                </div>
+
+                <div class="about-highlights">
+
+                    <div class="highlight-card">
+                        <h3>Computer Science</h3>
+                        <p>
+                            Building a strong foundation in programming
+                            and technology.
+                        </p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3>IoT Projects</h3>
+                        <p>
+                            Interested in developing practical IoT-based
+                            solutions.
+                        </p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3>Web Development</h3>
+                        <p>
+                            Creating responsive and user-friendly websites.
+                        </p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3>Problem Solving</h3>
+                        <p>
+                            Interested in solving real-world problems
+                            through technology.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="education-card reveal">
-          <div class="info-row"><span>College</span><strong>Lendi Institute of Engineering and Technology</strong></div>
-          <div class="info-row"><span>Degree</span><strong>B.Tech – Computer Science and Engineering</strong></div>
-          <div class="info-row"><span>Duration</span><strong>2024 – 2028</strong></div>
-          <div class="info-row"><span>Location</span><strong>Vizianagaram, A.P., India</strong></div>
-        </div>
-      </div>
+
     </section>
 
-    <section id="education" class="section alt">
-      <div class="section-heading reveal">
-        <p class="eyebrow">EDUCATION</p>
-        <h2>Academic Background</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <span>01</span>
-          <h3>B.Tech – CSE</h3>
-          <p>Lendi Institute of Engineering and Technology · 2024–2028</p>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section alternate-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p>EDUCATION</p>
+                <h2>My Academic Journey</h2>
+            </div>
+
+            <div class="education-grid">
+
+                <div class="education-card">
+
+                    <span class="education-year">
+                        2024 – 2028
+                    </span>
+
+                    <h3>
+                        B.Tech – Computer Science and Engineering
+                    </h3>
+
+                    <h4>
+                        Lendi Institute of Engineering and Technology
+                    </h4>
+
+                    <p class="education-result">
+                        CGPA: <strong>8.88</strong>
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <span class="education-year">
+                        2022 – 2024
+                    </span>
+
+                    <h3>
+                        Class XII – Board of Intermediate
+                    </h3>
+
+                    <h4>
+                        Sri Chaitanya Junior College
+                    </h4>
+
+                    <p class="education-result">
+                        952 / 1000
+                        <strong>(95.2%)</strong>
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <span class="education-year">
+                        2021 – 2022
+                    </span>
+
+                    <h3>
+                        Class X – CBSE
+                    </h3>
+
+                    <h4>
+                        Sri Chaitanya Techno / E.M. School
+                    </h4>
+
+                    <p class="education-result">
+                        537 / 600
+                        <strong>(89.6%)</strong>
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="skill-card reveal">
-          <span>02</span>
-          <h3>Class XII</h3>
-          <p>Sri Chaitanya Junior College · Score: 952/1000 (95.2%)</p>
-        </div>
-        <div class="skill-card reveal">
-          <span>03</span>
-          <h3>Class X</h3>
-          <p>Sri Chaitanya E.M School</p>
-        </div>
-      </div>
+
     </section>
+
+
+    <!-- ================= SKILLS ================= -->
 
     <section id="skills" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">MY SKILLS</p>
-        <h2>Technical & Other Skills</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card reveal"><span>01</span><h3>Python Programming</h3><p>Programming and problem solving</p></div>
-        <div class="skill-card reveal"><span>02</span><h3>Java Programming</h3><p>Object-oriented programming fundamentals</p></div>
-        <div class="skill-card reveal"><span>03</span><h3>SQL & NoSQL</h3><p>Database concepts and data handling</p></div>
-        <div class="skill-card reveal"><span>04</span><h3>HTML</h3><p>Web page structure and interfaces</p></div>
-        <div class="skill-card reveal"><span>05</span><h3>Communication & Presentation</h3><p>Clear communication and presentation skills</p></div>
-        <div class="skill-card reveal"><span>06</span><h3>Teamwork & Problem Solving</h3><p>Collaboration, time management and practical problem solving</p></div>
-      </div>
-    </section>
 
-    <section id="projects" class="section alt">
-      <div class="section-heading reveal">
-        <p class="eyebrow">PROJECTS</p>
-        <h2>Projects & Work</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <span>01</span>
-          <h3>Hybrid Animal Health Monitoring System</h3>
-          <p>
-            A smart animal-health monitoring concept using ear-tagged sensors to monitor
-            parameters such as body temperature, heart rate, oxygen level, activity and movement,
-            with centralized monitoring and alerts for early action.
-          </p>
-          <div class="project-tech">
-            <strong>Technologies / Tools:</strong> IoT, Smart Sensors, Real-Time Monitoring, Centralized Dashboard, Alert System
-          </div>
+        <div class="container">
+
+            <div class="section-heading">
+                <p>TECHNICAL SKILLS</p>
+                <h2>Technologies I Work With</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>Python Programming</h3>
+                    <p>Programming and problem solving using Python.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>SQL</h3>
+                    <p>Working with relational databases and queries.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>NoSQL / MongoDB</h3>
+                    <p>Working with NoSQL databases and MongoDB.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Java Programming</h3>
+                    <p>Object-oriented programming using Java.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>HTML &amp; CSS</h3>
+                    <p>Building and styling responsive web pages.</p>
+                </div>
+
+            </div>
+
+
+            <div class="other-skills">
+
+                <h3>Other Skills</h3>
+
+                <div class="skill-tags">
+
+                    <span>Communication Skills</span>
+                    <span>Quick Learner</span>
+                    <span>Teamwork and Collaboration</span>
+                    <span>Time Management</span>
+                    <span>Presentation Skills</span>
+                    <span>Problem-Solving Skills</span>
+                    <span>Self-Motivated</span>
+                    <span>Willingness to Learn</span>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="skill-card reveal">
-          <span>02</span>
-          <h3>Smart Agriculture Assistant using IoT</h3>
-          <p>
-            An IoT-based agriculture assistant designed to help farmers identify suitable
-            crop-growing conditions and make more informed decisions using technology and data.
-          </p>
-          <div class="project-tech">
-            <strong>Technologies / Tools:</strong> IoT, Sensors, Data-Driven Analysis, Web Interface, Smart Agriculture
-          </div>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATES ================= -->
+
+    <section id="certificates" class="section alternate-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p>CERTIFICATES</p>
+                <h2>My Certifications</h2>
+            </div>
+
+            <div class="certificate-grid">
+
+                <div class="certificate-card">
+                    <span>01</span>
+                    <h3>
+                        NPTEL – Introduction to Internet of Things (IoT)
+                    </h3>
+                    <p>NPTEL Certificate</p>
+                </div>
+
+                <div class="certificate-card">
+                    <span>02</span>
+                    <h3>
+                        AVISHKANDHRA PLEDGE
+                    </h3>
+                    <p>SBMP Learning Course</p>
+                </div>
+
+                <div class="certificate-card">
+                    <span>03</span>
+                    <h3>
+                        Upskill – Awarded as Grade B1
+                    </h3>
+                    <p>Upskill</p>
+                </div>
+
+                <div class="certificate-card">
+                    <span>04</span>
+                    <h3>
+                        NPTEL – Data Analytics with Python
+                    </h3>
+                    <p>NPTEL Certificate</p>
+                </div>
+
+                <div class="certificate-card">
+                    <span>05</span>
+                    <h3>
+                        GeeksforGeeks – Python
+                    </h3>
+                    <p>GeeksforGeeks</p>
+                </div>
+
+                <div class="certificate-card">
+                    <span>06</span>
+                    <h3>
+                        HackerRank Course – Python (Basics)
+                    </h3>
+                    <p>HackerRank</p>
+                </div>
+
+                <div class="certificate-card">
+                    <span>07</span>
+                    <h3>
+                        GeeksforGeeks – MongoDB
+                    </h3>
+                    <p>GeeksforGeeks</p>
+                </div>
+
+            </div>
+
         </div>
-      </div>
+
     </section>
 
-    <section id="certificates" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">CERTIFICATES</p>
-        <h2>Certifications</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="certificate reveal"><span>01</span><h3>NPTEL</h3><p>Introduction to Internet of Things (IoT)</p></div>
-        <div class="certificate reveal"><span>02</span><h3>NPTEL</h3><p>Data Analytics with Python</p></div>
-        <div class="certificate reveal"><span>03</span><h3>HackerRank</h3><p>Python (Basics)</p></div>
-        <div class="certificate reveal"><span>04</span><h3>AVISHKANDHRA PLEDGE</h3><p>SBMP Learning Course</p></div>
-        <div class="certificate reveal"><span>05</span><h3>GeeksforGeeks</h3><p>Python</p></div>
-        <div class="certificate reveal"><span>06</span><h3>GeeksforGeeks</h3><p>MongoDB</p></div>
-        <div class="certificate reveal"><span>07</span><h3>Upskill</h3><p>Awarded as Grade B1</p></div>
-      </div>
-    </section>
 
-    <section id="resume" class="section alt">
-      <div class="section-heading reveal">
-        <p class="eyebrow">MY RESUME</p>
-        <h2>Resume</h2>
-      </div>
-      <div class="about-card reveal">
-        <h3>Ravada Rakshitha – Computer Science Student</h3>
-        <p>
-          My resume contains my education, technical skills, projects, certifications,
-          other skills, languages, and professional details.
-        </p>
-        <div class="buttons">
-          <a class="btn primary" href="resume/resume.pdf" target="_blank" rel="noopener">View Resume</a>
-          <a class="btn secondary" href="resume/resume.pdf" download>Download Resume</a>
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p>PROJECTS</p>
+                <h2>What I Have Built</h2>
+            </div>
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Hybrid Animal Health Monitoring System
+                    </h3>
+
+                    <p>
+                        A smart animal-health monitoring project using
+                        ear-tag based sensing to monitor parameters such as
+                        body temperature, heart rate, oxygen level, activity
+                        and movement, with centralized monitoring and
+                        veterinarian alerts.
+                    </p>
+
+                    <div class="project-tools">
+
+                        <h4>
+                            Technologies / Tools Used
+                        </h4>
+
+                        <div class="tool-tags">
+                            <span>IoT</span>
+                            <span>Sensors</span>
+                            <span>Ear-Tag Sensors</span>
+                            <span>Health Monitoring</span>
+                            <span>Centralized Platform</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 2 -->
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Smart Agriculture Assistant using IoT
+                    </h3>
+
+                    <p>
+                        An IoT-based agriculture assistant concept focused
+                        on helping farmers make informed crop-related
+                        decisions using technology and practical
+                        data-driven support.
+                    </p>
+
+                    <div class="project-tools">
+
+                        <h4>
+                            Technologies / Tools Used
+                        </h4>
+
+                        <div class="tool-tags">
+                            <span>IoT</span>
+                            <span>Sensors</span>
+                            <span>Smart Agriculture</span>
+                            <span>Data Analysis</span>
+                            <span>Web Platform</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
+
     </section>
 
-    <section id="contact" class="contact section">
-      <div class="contact-inner reveal">
-        <p class="eyebrow">GET IN TOUCH</p>
-        <h2>Let's Connect</h2>
-        <p>
-          I am interested in learning opportunities, collaborations, and meaningful
-          technology projects.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:rakshitharavada652@gmail.com">rakshitharavada652@gmail.com</a>
-          <a href="tel:+919492247210">+91 9492247210</a>
-          <span>Vizianagaram, A.P., India</span>
-          <a href="https://github.com/rakshitha070112" target="_blank" rel="noopener">GitHub: @rakshitha070112</a>
-          <a href="https://www.linkedin.com/in/ravada-rakshitha-93922334a" target="_blank" rel="noopener">LinkedIn: Ravada Rakshitha</a>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section alternate-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p>CONTACT</p>
+                <h2>Let's Connect</h2>
+            </div>
+
+            <div class="contact-content">
+
+                <div class="contact-intro">
+
+                    <h3>
+                        Have a project or opportunity?
+                    </h3>
+
+                    <p>
+                        Feel free to connect with me through email,
+                        LinkedIn or GitHub.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-details">
+
+                    <a
+                        href="mailto:rakshitharavada652@gmail.com"
+                        class="contact-item"
+                    >
+                        <span class="contact-label">Email</span>
+                        <span>
+                            rakshitharavada652@gmail.com
+                        </span>
+                    </a>
+
+
+                    <a
+                        href="tel:9492247210"
+                        class="contact-item"
+                    >
+                        <span class="contact-label">Phone</span>
+                        <span>
+                            9492247210
+                        </span>
+                    </a>
+
+
+                    <div class="contact-item">
+                        <span class="contact-label">Location</span>
+                        <span>
+                            Vizianagaram, A.P.
+                        </span>
+                    </div>
+
+
+                    <a
+                        href="https://github.com/rakshitha070112"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item"
+                    >
+                        <span class="contact-label">GitHub</span>
+                        <span>
+                            github.com/rakshitha070112
+                        </span>
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/ravada-rakshitha-93922334a/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item"
+                    >
+                        <span class="contact-label">LinkedIn</span>
+                        <span>
+                            Ravada Rakshitha
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-        <a class="btn primary" href="mailto:rakshitharavada652@gmail.com">Email Me</a>
-      </div>
+
     </section>
-  </main>
 
-  <footer>
-    <p>© <span id="year"></span> Ravada Rakshitha · CSE Student</p>
-  </footer>
 
-  <script src="script.js"></script>
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Ravada Rakshitha. All Rights Reserved.
+            </p>
+
+            <div class="footer-links">
+
+                <a
+                    href="https://github.com/rakshitha070112"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/ravada-rakshitha-93922334a/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+                <a
+                    href="resume/resume.pdf"
+                    target="_blank"
+                >
+                    Resume
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
 </body>
 </html>
